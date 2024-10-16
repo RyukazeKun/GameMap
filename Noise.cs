@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
@@ -72,5 +73,10 @@ public static class Noise
         }
 
                 return noiseMap;
+    }
+
+    internal static float[,] GenerateNoiseMap(int mapWidth, int mapHeight, int seed, float noiseScale, int octaves, float persistance, float lacunarity, object offset)
+    {
+        throw new NotImplementedException();
     }
 }
